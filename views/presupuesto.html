@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Descubre La Muralla, aceite de oliva virgen extra de variedad verdial, originario de Mijas, Málaga. Calidad y sabor auténtico andaluz en cada gota.
+    ">
+    <meta name="keywords" content="aceite de oliva virgen extra, aceite mijas, aceite verdial, verdial malaga, aceite saludable, aceite andaluz,">
+    <title>Presupuesto | La Muralla</title>
+    <link rel="stylesheet" href="../CSS/estilos3.css">
+</head>
+<body>  
+    <header>
+        <nav class="nav-bar">
+        <a href="../index.html">Inicio</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="presupuesto.html" class="active">Presupuesto</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="hero">
+        <h1>Estamos aquí para ayudarte. Comunícate con nosotros</h1>
+        <a href="#formulario-section" class="enlace">Más información</a>
+        <a href="#formulario-section" class="flecha" ><img src="../images/arrow-circle-down-svgrepo-com.svg" alt="flecha" height="50" width="50"></a>
+    </div>
+    </header>
+    <main>
+        <section class="contenido" id="formulario-section">
+            <div class="text">
+                <h2>¡Escríbenos!</h2><br>
+                <p>Puedes enviarnos un mensaje directamente a través del siguiente formulario. Responderemos lo antes posible para brindarte la mejor antención.</p>
+            </div>
+            <div class="contenedor">
+                <form action="post" class="formulario" id="formulario">
+                    <div class="datos">
+                        <h3>Datos personales</h3>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" placeholder="Nombre*" id="nombre" name="nombre" required>
+                        <span class="error" id="nombreError"></span>
+
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos*" required>
+                        <span class="error" id="apellidosError"></span>
+
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Teléfono*" required>
+                        <span class="error" id="telefonoError"></span>
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email*" required>
+                        <span class="error" id="emailError"></span>
+                    </div>
+                    <div class="presupuesto">
+                        <h3>Presupuesto</h3>
+                        <label for="select-product">Elige un producto</label>
+                        <select name="select-product" id="select-product" required>
+                            <option value="">Seleccione un producto</option>
+                            <option value="Botella:12">Botella de 750ml - 12€</option>
+                            <option value="Garrafa:40">Garrafa de 5L - 40€</option>
+                            <option value="Monodosis:5">Pack 3 monodosis de 10ml - 5€</option>
+                        </select>
+                        <span class="error" id="seleccionError"></span>
+                        <button id="añadir-carrito">Añadir al carrito</button>
+
+                        <div class="carrito" id="contenedor-carrito">
+                            <label for="articulos-carrito">Carrito</label>
+                            <div id="articulos-carrito"></div>
+                        </div>
+                        <label for="plazo-meses">Plazo en meses</label>
+                        <input type="number" name="plazo-meses" id="plazo-meses" required>
+                        <div class="extras">
+                            <label>Elija los extras para el producto</label>
+                            <label>
+                                <input type="checkbox" class="checkbox-extra" value="Entrega rápida:8">Envío exprés en 24horas 8€
+                            </label>
+                            <label>
+                                <input type="checkbox" class="checkbox-extra" value="Etiqueta:3" id="etiqueta-checkbox">Etiqueta personalizada con dedicatoria 3€
+                            </label>
+                            <div id="dedicatoria-container">
+                                <textarea id="dedicatoria-textarea" placeholder="Escriba aquí su dedicatoria" name="dedicatoria"></textarea>
+                            </div>
+                            <label>
+                                <input type="checkbox" class="checkbox-extra" value="Recetas:1">Recetas exclusivas 1€
+                            </label>
+                            <label>
+                                <input type="checkbox" class="checkbox-extra" value="Cata:15" id="cata-checkbox">Cata exclusiva en nuestras instalaciones 15€
+                            </label>
+                            <div id="fecha-container">
+                                <label for="fecha-cata">Elija la fecha:</label>
+                                <input type="date" name="fechaCata" id="fecha-cata">
+
+                                <label for="personas">Cuantas personas:</label>
+                                <input type="number" name="personas" id="personas">
+                            </div>
+                        </div>
+
+                        <label for="total-presu">Presupuesto estimado</label>
+                        <input type="text" disabled id="total-presu" value="0€">
+                    </div>
+                    <div class="condiciones">
+                        <h3>Aceptación condiciones y envío de presupuesto</h3>
+                        <label for="politica-priv">He leído la política de <a href="politica-priv.html">privacidad</a></label>
+                        <input type="checkbox" name="politica-priv" id="politica-priv" required>
+
+                        <input type="submit" value="Enviar formulario" id="enviar-form">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footercontainer">
+            <div class="footersection1">
+                <img class="logo" src="../images/logo.png" alt="logo La Muralla" height="100" width="100">
+                <h4>La Muralla</h4>
+                <p>El mejor aceite de oliva virgen extra de Mijas.</p>
+                <p>&copy; 2024 La Muralla. Todos los derechos reservados.</p>
+            </div>
+            <div class="footersection2">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html">Galeria</a>
+                    </li>
+                    <li>
+                        <a href="presupuesto.html">Presupuesto</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="politica-priv.html">Política de Privacidad</a>
+                    </li>
+                    <li>
+                        <a href="aviso-legal.html">Aviso Legal</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footersection3">
+                <h4>Síguenos</h4>
+                <a href="https://www.facebook.com/login/?locale=es_ES" target="_blank"><img src="../images/facebook-svgrepo-com.svg" alt="Logo Facebook" width="20" height="30"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram-svgrepo-com.svg" alt="Logo Instagram" width="30" height="30"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/presupuesto.js"></script>
+</body>
+</html>

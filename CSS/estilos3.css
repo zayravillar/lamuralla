@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background: url('../images/plaza.jpg') center/cover no-repeat fixed;
+    margin-top: 40px;
+}
+.nav-bar{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    padding: 40px;
+    width: 100%;
+    background-color: #326123;
+}
+.nav-bar a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: bold;
+}
+.nav-bar a:hover{
+    text-decoration: underline;
+}
+.nav-bar .active{
+    text-decoration: underline;
+}
+.hero{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h1{
+    font-family: "Merriweather Sans", sans-serif;
+    color: white;
+    font-size: 3rem;
+}
+.hero .enlace{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+.hero .flecha{
+    margin-top: 10px;
+}
+/*Secciones*/
+section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*Contenido*/
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.text{
+    padding: 40px;
+    width: 50%;
+}
+.text h2{
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 2rem;
+}
+.text p{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+/*Formulario*/
+
+.datos, .presupuesto, .condiciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+.contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.formulario {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+h3 {
+    color: #326123;
+    border-bottom: 2px solid #326123;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+.extras label {
+    display: flex;
+    align-items: center;
+}
+.condiciones {
+    margin-top: 20px;
+}
+input[type="submit"] {
+    background-color: #326123;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+input[type="submit"]:hover {
+    background-color: #274d1a;
+}
+.valido{
+    border-color: #326123;
+}
+.invalido{
+    border-color: red;
+}
+.error{
+    color: red;
+}
+#dedicatoria-container, #fecha-container{
+    display: none;
+    margin-top: 8px;
+}
+#dedicatoria-textarea{
+    width: 100%;
+    height: 80px;
+}
+/*Footer*/
+footer{
+    background-color: #363636;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    color: white;
+}
+.footercontainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+    gap: 80px; 
+}
+.footercontainer h4, p, a{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.footersection2 ul{
+    list-style: none;
+}
+.footersection2 a{
+    text-decoration: none;
+    color: white;
+}
+.footersection2 a:hover{
+    text-decoration: underline;
+}
+/*Tablets*/
+@media (max-width:768px) {
+    header, .nav-bar, main, footer{
+        width: 100%;
+    }
+}

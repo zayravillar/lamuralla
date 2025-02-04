@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background: url('../images/bodega.jpg') center/cover no-repeat fixed;
+    margin-top: 40px;
+}
+.nav-bar{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    padding: 40px;
+    width: 100%;
+    background-color: #326123;
+}
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: bold;
+}
+.nav-bar a:hover{
+    text-decoration: underline;
+}
+.nav-bar .active{
+    text-decoration: underline;
+}
+.hero{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h1{
+    font-family: "Merriweather Sans", sans-serif;
+    color: white;
+    font-size: 3rem;
+}
+.hero .enlace{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+.hero .flecha{
+    margin-top: 10px;
+}
+/*Secciones*/
+section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*Noticia*/
+.noticia1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+h2{
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+}
+p{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+span{
+    font-weight: bold;
+}
+.enlace-reserva{
+    color: #326123;
+    font-weight: bold;
+    text-decoration: none;
+}
+.enlace-reserva:hover{
+    text-decoration: underline;
+}
+video{
+    margin-bottom: 50px;
+}
+/*Footer*/
+footer{
+    background-color: #363636;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    color: white;
+}
+.footercontainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+    gap: 80px; 
+}
+.footercontainer h4, p, a{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.footersection2 ul{
+    list-style: none;
+}
+.footersection2 a{
+    text-decoration: none;
+    color: white;
+}
+.footersection2 a:hover{
+    text-decoration: underline;
+}
